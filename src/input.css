@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+    /* Dark Mode Styles - Will apply if user prefers dark mode */
+    :root {
+        --color-background: 38deg 80% 2%;
+        --color-text: 42deg 74% 94%;
+        --color-accent: 223deg 75% 38%;
+        --color-primary-200: 39deg 75% 50%;
+        --color-secondary-100: 176deg 80% 22%;
+        --color-secondary-200: 176deg 74% 26%;
+    }
+
+    /* Light Mode Styles */
+    :root {
+        --color-background: 37deg 80% 98%;
+        --color-text: 42deg 74% 6%;
+        --color-accent: 223deg 75% 62%;
+        --color-secondary-100: 209deg 100% 95%;
+        --color-secondary-200: 176deg 74% 74%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        /* Dark Mode Styles - Will apply if user prefers dark mode and not overridden above */
+        :root {
+            --color-background: 38deg 80% 2%;
+            --color-text: 42deg 74% 94%;
+            --color-accent: 223deg 75% 38%;
+            --color-secondary-100: 176deg 80% 22%;
+            --color-secondary-200: 176deg 74% 26%;
+        }
+    }
+    
+}
+
+#apply-gradient{
+    background: linear-gradient(149deg, rgba(223,156,32,1) 30%, rgba(85,127,231,1) 72%);
+    -webkit-background-clip: text; /* For WebKit/Blink browsers */
+    color: transparent;
+    display: inline-block;
+}
+
+#apply-stroke{
+    -webkit-text-stroke: 1px gray;
+    font-style: italic;
+    background-color: transparent;
+    -webkit-background-clip: text; /* For WebKit/Blink browsers */
+    background-clip: text; /* Standard property */
+}
+
+.nav-decor{
+    @apply relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-text after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+}
+
+.btn{
+    @apply rounded-full px-5 py-4 uppercase text-xs md:text-sm font-semibold cursor-pointer tracking-widest;
+}
+
+.card-btn{
+    @apply bg-primary inline-block px-6 py-3 rounded-md;
+}
+
+.card-btn:hover{
+    @apply hover:transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-sm shadow-primary;
+}
+
+.btn:hover{
+    @apply shadow-sm shadow-current;
+}
+
+.space-nav{
+    @apply px-5;
+}
+
+.card-article{
+    @apply w-[300px] rounded-xl overflow-hidden shadow-sm shadow-secondary-100 flex flex-col;
+}
+
+.card-image{
+    @apply flex items-center justify-center relative mb-[-0.75rem] bg-secondary-200 h-[25vh];
+}
+
+.card-data{
+    @apply  relative rounded-md text-center z-20 sm:p-4 bg-secondary-100 h-[35vh];
+}
+
+.card-img{
+    @apply mx-auto relative z-10 object-cover;
+}
+
+.card-name{
+    @apply font-bold my-3;
+}
+
+.card-type{
+    @apply mb-7 font-light text-sm;
+}
+
+/*Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: hsl(218, 4%, 48%);
+    opacity: 1;
+    size: 10px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: hsl(223, 75%, 62%);
+}
+

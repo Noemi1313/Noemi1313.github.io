@@ -1,0 +1,17 @@
+====CARD SLIDER====
+.card-name
+Mental Health Prediction
+E-Commerce Sales Analysis
+Be Well Mobile App
+Social Network Mockup
+
+.card-type
+Data Science & ML
+Database
+Web Development
+Web Development
+
+.card-btn
+View More
+
+bg-primary inline-block px-6 py-3 rounded-md
