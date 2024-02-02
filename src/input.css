@@ -121,7 +121,7 @@
 }
 
 .badge {
-    @apply font-semibold text-text text-xs lg:text-sm border-2 border-solid border-text rounded-md inline-block tracking-widest px-2;
+    @apply font-semibold text-text text-xs lg:text-sm border-2 border-solid border-text rounded-md inline-block tracking-widest px-2 mb-1;
 }
 
 .details-link{

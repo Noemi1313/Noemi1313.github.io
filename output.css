@@ -2247,6 +2247,10 @@ video {
   font-weight: 300;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -2317,6 +2321,11 @@ video {
 
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
+}
+
+.text-accent{
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-accent) / var(--tw-text-opacity));
 }
 
 .text-background{
@@ -2886,6 +2895,7 @@ video {
 }
 
 .badge{
+  margin-bottom: 0.25rem;
   display: inline-block;
   border-radius: 0.375rem;
   border-width: 2px;
