@@ -58,12 +58,14 @@
     @apply relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-text after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
 }
 
+/**BUTTONS*/
+
 .btn{
     @apply rounded-full px-5 py-4 uppercase text-xs md:text-sm font-semibold cursor-pointer tracking-widest;
 }
 
 .card-btn{
-    @apply bg-primary inline-block px-6 py-3 rounded-md;
+    @apply bg-primary inline-block px-6 py-3 rounded-md cursor-pointer;
 }
 
 .card-btn:hover{
@@ -78,10 +80,12 @@
     @apply px-5;
 }
 
+
 .card-article{
-    @apply w-[300px] rounded-xl overflow-hidden shadow-sm shadow-secondary-100 flex flex-col;
+    @apply w-[300px] rounded-xl overflow-hidden shadow-sm shadow-secondary-100;
 }
 
+/**Card front*/
 .card-image{
     @apply flex items-center justify-center relative mb-[-0.75rem] bg-secondary-200 h-[25vh];
 }
@@ -101,6 +105,29 @@
 .card-type{
     @apply mb-7 font-light text-sm;
 }
+
+/**Card back**/
+
+.back{
+    @apply bg-secondary-100 rounded-md h-full p-4;
+}
+
+.card-date {
+    @apply uppercase text-gray-400 text-sm font-extralight italic ;
+}
+
+.card-desc {
+    @apply font-light my-6;
+}
+
+.badge {
+    @apply font-semibold text-accent text-xs border-2 border-solid border-accent rounded-md inline-block tracking-widest px-2;
+}
+
+.details-link{
+    @apply flex justify-between mt-8;
+}
+
 
 /*Swiper class */
 .swiper-button-prev::after,

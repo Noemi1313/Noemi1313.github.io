@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let swiperCards = new Swiper('.card-content', {
         loop: true,
         spaceBetween: 32,
-        grabCursor: true,
+
       
         // Pagination
         pagination: {
@@ -117,6 +117,23 @@ document.addEventListener("DOMContentLoaded", () => {
       
       });
 
+      /*========== FLIP ==========*/
+      // Select all 'Read more' card buttons
+     var cardButtons = document.querySelectorAll('.card-btn');
+
+      // Add event listener to each button
+      cardButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            toggleCard(this);
+        });
+      });
+
+      // Function to toggle card visibility
+      function toggleCard(button) {
+        var cardArticle = button.closest('.card-article');
+        cardArticle.querySelector('.front').classList.toggle('hidden');
+        cardArticle.querySelector('.back').classList.toggle('hidden');
+     }
         
 
 });

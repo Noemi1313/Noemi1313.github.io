@@ -14,4 +14,3 @@ Web Development
 .card-btn
 View More
 
-bg-primary inline-block px-6 py-3 rounded-md
