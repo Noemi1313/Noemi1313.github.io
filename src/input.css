@@ -99,11 +99,11 @@
 }
 
 .card-name{
-    @apply font-bold my-3;
+    @apply font-bold text-base lg:text-2xl my-3;
 }
 
 .card-type{
-    @apply mb-7 font-light text-sm;
+    @apply mb-7 font-light text-sm lg:text-xl;
 }
 
 /**Card back**/
@@ -113,7 +113,7 @@
 }
 
 .card-date {
-    @apply uppercase text-gray-400 text-sm font-extralight italic ;
+    @apply uppercase text-gray-400 text-sm lg:text-base font-extralight italic ;
 }
 
 .card-desc {
@@ -121,7 +121,7 @@
 }
 
 .badge {
-    @apply font-semibold text-accent text-xs border-2 border-solid border-accent rounded-md inline-block tracking-widest px-2;
+    @apply font-semibold text-text text-xs lg:text-sm border-2 border-solid border-text rounded-md inline-block tracking-widest px-2;
 }
 
 .details-link{
